@@ -24,9 +24,9 @@ pub fn build(b: *std.Build) void {
     b.step("help", "显示帮助信息").dependOn(&b.addSystemCommand(&.{
         "echo",
         \\用法:
-        \\  zig build run    - 运行程序
-        \\  zig build help   - 显示此帮助
-        \\  zig build        - 构建程序
+        \\  zig build run     - 运行程序
+        \\  zig build help    - 显示此帮助
+        \\  zig build         - 构建程序
         \\  zig build install - 安装到 zig-out/bin
     }).step);
 
